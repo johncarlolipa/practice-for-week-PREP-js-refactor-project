@@ -14,7 +14,6 @@ function plusFive(num) {
 const plusTen = (num) => num + 10;
 console.log(plusTen(7));
 
-
 /*
     Original:
     Write a function `printFives(max)` that prints out the multiples of 5 that
@@ -32,11 +31,11 @@ function printFives(max) {
   }
 }
 
-const returnSevens = (max) => Array.from({ length: max / 7 }, (_, index) => index * 7);
+const returnSevens = (max) =>
+  Array.from({ length: max / 7 }, (_, index) => index * 7);
 
 const result = returnSevens(21);
 console.log(result);
-
 
 /*
     Original:
@@ -56,8 +55,8 @@ function eitherStringIncluded(sentence, word1, word2) {
 }
 
 const bothStringsIncluded = (sentence, word1, word2) => {
-    return sentence.includes(word1) && sentence.includes(word2);
-}
+  return sentence.includes(word1) && sentence.includes(word2);
+};
 /*
     Original:
     Write a function `sumArray(arr)` that takes in an array of numbers and
@@ -77,14 +76,14 @@ function sumArray(arr) {
 }
 
 const productArray = (arr) => {
-    let product = 1;
-    for (let i = 0; i<arr.length; i++){
-        product *= arr[i]
-    }
-    return product;
-}
+  let product = 1;
+  for (let i = 0; i < arr.length; i++) {
+    product *= arr[i];
+  }
+  return product;
+};
 
-console.log(productArray([1, 2, 3, 4]))
+console.log(productArray([1, 2, 3, 4]));
 /*
     Original:
     Write a function `threeOrSeven` that takes in a number and returns `true`
@@ -97,6 +96,10 @@ console.log(productArray([1, 2, 3, 4]))
 function threeOrSeven(num) {
   return num % 3 === 0 || num % 7 === 0;
 }
+
+const fiveAndEleven = (num) => {
+  return num / 5 === 0 && num / 11 === 0 ? true : false;
+};
 
 /*
     Original:
