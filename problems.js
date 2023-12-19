@@ -55,6 +55,9 @@ function eitherStringIncluded(sentence, word1, word2) {
   return sentence.includes(word1) || sentence.includes(word2);
 }
 
+const bothStringsIncluded = (sentence, word1, word2) {
+    return sentence.includes(word1) && sentence.includes(word2);
+}
 /*
     Original:
     Write a function `sumArray(arr)` that takes in an array of numbers and
