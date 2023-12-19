@@ -138,7 +138,7 @@ const countConsonants = (word) => {
   return count;
 };
 
-console.log(countConsonants("make"))
+console.log(countConsonants("make"));
 
 /*
     Original:
@@ -160,7 +160,20 @@ function whisper(str) {
   return str.toLowerCase();
 }
 
+const alternatingLetters = (str) => {
+  let letter = str.split("");
 
+  for (let index = 0; index < letter.length; index++) {
+    if (index % 2 === 0) {
+      letter[index] = letter[index].toLowerCase();
+    } else {
+      letter[index] = letter[index].toUpperCase();
+    }
+  }
+  return letter.join("");
+};
+
+console.log(alternatingLetters("Hello"));
 
 module.exports = {
   plusTen,
