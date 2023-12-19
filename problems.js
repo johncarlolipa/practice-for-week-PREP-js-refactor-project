@@ -55,7 +55,7 @@ function eitherStringIncluded(sentence, word1, word2) {
   return sentence.includes(word1) || sentence.includes(word2);
 }
 
-const bothStringsIncluded = (sentence, word1, word2) {
+const bothStringsIncluded = (sentence, word1, word2) => {
     return sentence.includes(word1) && sentence.includes(word2);
 }
 /*
@@ -76,7 +76,7 @@ function sumArray(arr) {
   return sum;
 }
 
-function productArray(arr){
+const productArray = (arr) => {
     let product = 1;
     for (let i = 0; i<arr.length; i++){
         product *= arr[i]
