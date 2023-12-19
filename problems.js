@@ -121,6 +121,25 @@ function countVowels(word) {
   return count;
 }
 
+const countConsonants = (word) => {
+  const vowels = ["a", "e", "i", "o", "u"];
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+  const consonants = Array.from(alphabet).filter(
+    (letter) => !vowels.includes(letter)
+  );
+
+  let count = 0;
+  for (let i = 0; i < word.length; i++) {
+    if (consonants.includes(word[i])) {
+      count++;
+    }
+  }
+  return count;
+};
+
+console.log(countConsonants("make"))
+
 /*
     Original:
     Write a function `whisper` that takes in a string and returns a "whispered"
@@ -140,6 +159,8 @@ function countVowels(word) {
 function whisper(str) {
   return str.toLowerCase();
 }
+
+
 
 module.exports = {
   plusTen,
