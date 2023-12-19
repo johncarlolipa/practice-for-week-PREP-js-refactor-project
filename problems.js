@@ -69,13 +69,22 @@ const bothStringsIncluded = (sentence, word1, word2) {
     you get when you multiply all the numbers together.
 */
 function sumArray(arr) {
-  let sum = 0;
+  let sum = [];
   for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
   }
   return sum;
 }
 
+function productArray(arr){
+    let product = 1;
+    for (let i = 0; i<arr.length; i++){
+        product *= arr[i]
+    }
+    return product;
+}
+
+console.log(productArray([1, 2, 3, 4]))
 /*
     Original:
     Write a function `threeOrSeven` that takes in a number and returns `true`
